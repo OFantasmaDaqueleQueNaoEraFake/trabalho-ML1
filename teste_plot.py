@@ -1,125 +1,118 @@
+import logging
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
-from sklearn.model_selection import train_test_split
-from sklearn.decomposition import PCA
-from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import pairwise_distances_argmin
-
-from metrics import accuracy
 from kernerls import Linear, RBF
 from SVM_model import SVM
+import pandas as pd
+import matplotlib.pyplot as plt
 
+logging.basicConfig(level=logging.DEBUG)
 
-def plot_decision_boundary(model, X, y, title, scaler=None, pca=None, show_margin=False, show_legend=True):
-    h = 1.0
-    max_grid_points = 1000
-    x_min, x_max = np.percentile(X[:, 0], [1, 99])
-    y_min, y_max = np.percentile(X[:, 1], [1, 99])
+def pca_manual(X, n_components=2):
+    X_meaned = X - np.mean(X, axis=0)
+    cov_mat = np.cov(X_meaned, rowvar=False)
+    eigen_values, eigen_vectors = np.linalg.eigh(cov_mat)
+    sorted_idx = np.argsort(eigen_values)[::-1]
+    eigen_vectors = eigen_vectors[:, sorted_idx]
+    eigen_vectors_subset = eigen_vectors[:, :n_components]
+    return np.dot(X_meaned, eigen_vectors_subset)
 
-    range_x = np.linspace(x_min, x_max, int(np.sqrt(max_grid_points)))
-    range_y = np.linspace(y_min, y_max, int(np.sqrt(max_grid_points)))
-    xx, yy = np.meshgrid(range_x, range_y)
+def normalize_manual(X):
+    mean = np.mean(X, axis=0)
+    std = np.std(X, axis=0)
+    std[std == 0] = 1
+    return (X - mean) / std
 
+def train_test_split_manual(X, y, test_size=0.2, random_state=None):
+    if random_state is not None:
+        np.random.seed(random_state)
+    indices = np.arange(len(X))
+    np.random.shuffle(indices)
+    split_idx = int(len(X) * (1 - test_size))
+    train_idx, test_idx = indices[:split_idx], indices[split_idx:]
+    return X[train_idx], X[test_idx], y[train_idx], y[test_idx]
+
+def compute_metrics(y_true, y_pred, pos_label=1):
+    y_true, y_pred = np.array(y_true), np.array(y_pred)
+    TP = np.sum((y_pred == pos_label) & (y_true == pos_label))
+    TN = np.sum((y_pred != pos_label) & (y_true != pos_label))
+    FP = np.sum((y_pred == pos_label) & (y_true != pos_label))
+    FN = np.sum((y_pred != pos_label) & (y_true == pos_label))
+    accuracy = (TP + TN) / len(y_true) if len(y_true) > 0 else 0.0
+    precision = TP / (TP + FP) if (TP + FP) > 0 else 0.0
+    recall = TP / (TP + FN) if (TP + FN) > 0 else 0.0
+    f1 = (2 * precision * recall) / (precision + recall) if (precision + recall) > 0 else 0.0
+    return {"accuracy": accuracy, "precision": precision, "recall": recall, "f1_score": f1, "confusion_matrix": np.array([[TN, FP], [FN, TP]])}
+
+def plot_svm_decision(model, X, y, kernel_name, weight):
+    h = 0.1
+    x_min, x_max = X[:, 0].min() - 1, X[:, 0].max() + 1
+    y_min, y_max = X[:, 1].min() - 1, X[:, 1].max() + 1
+    xx, yy = np.meshgrid(np.arange(x_min, x_max, h), np.arange(y_min, y_max, h))
     grid = np.c_[xx.ravel(), yy.ravel()]
+    Z = model.decision_function(grid).reshape(xx.shape)
 
-    if pca is not None:
-        grid_original = pca.inverse_transform(grid)  # volta ao espaço de X_scaled
-    else:
-        grid_original = grid
+    plt.figure(figsize=(8, 6))
+    plt.contourf(xx, yy, Z, cmap=plt.cm.coolwarm, alpha=0.2, levels=30)
+    plt.contour(xx, yy, Z, levels=[0], colors='k', linewidths=1.5)
 
-    Z = model.predict(grid_original)
-    Z = Z.reshape(xx.shape)
+    for label, color, name in [(-1, 'red', 'Classe -1'), (1, 'blue', 'Classe +1')]:
+        mask = y == label
+        plt.scatter(X[mask, 0], X[mask, 1], c=color, label=name, alpha=0.6)
 
-    plt.contourf(xx, yy, Z, alpha=0.2, cmap=plt.cm.coolwarm)
+    for i, sv in enumerate(model.support_vectors):
+        edge_color = 'black' if model.y[model.alpha > 1e-5][i] == 1 else 'gray'
+        plt.scatter(sv[0], sv[1], s=100, facecolors='none', edgecolors=edge_color, linewidths=2)
 
-    max_plot = 1000
-    if len(X) > max_plot:
-        idx = np.random.choice(len(X), size=max_plot, replace=False)
-        X_plot, y_plot = X[idx], y[idx]
-    else:
-        X_plot, y_plot = X, y
-
-    plt.scatter(X_plot[:, 0], X_plot[:, 1], c=y_plot, cmap=plt.cm.coolwarm, edgecolors='k', s=40)
-
-    sv_X = model.X[model.sv_idx]
-    label = 'Support Vectors' if show_legend else '_nolegend_'
-    plt.scatter(sv_X[:, 0], sv_X[:, 1], facecolors='none', edgecolors='black',
-                s=100, linewidths=1.5, label=label)
-
-    if show_margin and isinstance(model.kernel, Linear):
-        w = ((model.alpha * model.y)[:, np.newaxis] * model.X).sum(axis=0)
-        w_2d = w[:2]
-        b = model.b
-
-        x_vals = np.linspace(x_min, x_max, 200)
-        y_vals = -(w_2d[0] * x_vals + b) / w_2d[1]
-        margin = 1 / np.linalg.norm(w_2d)
-        y_margin_up = y_vals + margin
-        y_margin_down = y_vals - margin
-
-        plt.plot(x_vals, y_vals, 'k-', linewidth=1, label='Hiperplano')
-        plt.plot(x_vals, y_margin_up, 'k--', linewidth=1, label='Margem')
-        plt.plot(x_vals, y_margin_down, 'k--', linewidth=1)
-
-    plt.title(title)
-    plt.xlabel('Feature 1')
-    plt.ylabel('Feature 2')
-    if show_legend:
-        plt.legend()
+    plt.legend()
+    plt.title(f"Kernel: {kernel_name} | Peso da Classe 1: {weight}")
+    plt.tight_layout()
     plt.grid(True)
     plt.show()
 
-
-
 def classification_from_dataframe(df):
-    # Separa y (última coluna) e X (demais colunas)
     y = df.iloc[:, -1].copy()
     X = df.iloc[:, :-1].copy()
+    X = pd.get_dummies(X, dummy_na=True).fillna(0)
 
-    # Codifica atributos categóricos e preenche NaNs
-    X = pd.get_dummies(X, dummy_na=True)
-    X = X.fillna(0)
-
-    # Converte rótulos para {-1, 1}
     if y.nunique() != 2:
         raise ValueError(f"Esperado problema binário. Valores encontrados: {y.unique()}")
-
     unique_classes = y.unique()
-    y = y.map({unique_classes[0]: -1, unique_classes[1]: 1})
+    y_mapped = y.replace({unique_classes[0]: -1, unique_classes[1]: 1})
+    y = y_mapped.astype(int)
 
-    # Normaliza os dados
-    scaler = StandardScaler()
-    X_scaled = scaler.fit_transform(X)
+    X = normalize_manual(X.values)
+    X_2d = pca_manual(X, n_components=2)
+    X_train, X_test, y_train, y_test = train_test_split_manual(X_2d, y.to_numpy(), test_size=0.2, random_state=42)
 
-    # Aplica PCA só para visualização
-    pca = PCA(n_components=2)
-    X_2d = pca.fit_transform(X_scaled)
+    weights = [1.0, 5.0, 10.0, 20.0, 50.0]
+    gammas = [0.001, 0.01, 0.1, 0.5, 1, 10]
+    kernels = [Linear()] + [RBF(gamma=g) for g in gammas]
 
-    # Divide para treino e teste
-    X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=42)
 
-    for idx, kernel in enumerate([Linear(), RBF(gamma=0.5)]):
-        model = SVM(C=1.0, kernel=kernel, max_iter=500)
-        model.fit(X_train, y_train)
+    for kernel in kernels:
+        print(f"\n==> Kernel: {kernel}")
+        for w in weights:
+            class_weight = {1: w, -1: 1.0}
+            model = SVM(C=1.0, class_weight=class_weight, kernel=kernel, max_iter=500)
+            model.fit(X_train, y_train)
+            y_pred = model.predict(X_test)
+            metrics = compute_metrics(y_test, y_pred)
 
-        # Testa e mostra
-        predictions = model.predict(X_test)
-        acc = accuracy(y_test, predictions)
+            print(f"\n  Class weight (1): {w}")
+            print("  Accuracy :", metrics["accuracy"])
+            print("  Precision:", metrics["precision"])
+            print("  Recall   :", metrics["recall"])
+            print("  F1-score :", metrics["f1_score"])
+            print("  Confusion matrix:\n", metrics["confusion_matrix"])
+            print("Alphas da classe 1:", model.alpha[model.y == 1])
+            print("Soma total das alphas classe 1:", np.sum(model.alpha[model.y == 1]))
 
-        title = f"SVM com {kernel} (Acurácia: {acc:.2f})"
-        # Visualiza com dados em 2D (após PCA)
-        X_test_2d = pca.transform(X_test)
-        plot_decision_boundary(
-            model, X_test_2d, y_test.to_numpy(),
-            title,
-            pca=pca
-            show_margin=isinstance(kernel, Linear),
-            show_legend=(idx == 0)
-        )
-
+            plot_svm_decision(model, X_train, y_train, kernel_name=str(kernel), weight=w)
 
 if __name__ == "__main__":
-    # Substitua pelo caminho do seu arquivo
-    df = pd.read_csv("dataset_group_2_class_imbalance/dataset_1065_kc3.csv")
-    classification_from_dataframe(df)
+    for path in ["dataset_group_2_class_imbalance/dataset_1061_ar4.csv",
+                 "dataset_group_2_class_imbalance/dataset_1064_ar6.csv",
+                 "dataset_group_2_class_imbalance/dataset_1065_kc3.csv"]:
+        df = pd.read_csv(path)
+        print(df)
+        classification_from_dataframe(df)

@@ -1,39 +1,19 @@
 # coding:utf-8
 import logging
-
 import numpy as np
-
 from base import BaseEstimator
 from kernerls import Linear
 
 np.random.seed(9999)
 
-"""
-References:
-The Simplified SMO Algorithm http://cs229.stanford.edu/materials/smo.pdf
-"""
-
-
 class SVM(BaseEstimator):
     def __init__(self, C=1.0, class_weight=None, kernel=None, tol=1e-3, max_iter=100):
-        """Support vector machines implementation using simplified SMO optimization.
-
-        Parameters
-        ----------
-        C : float, default 1.0
-        kernel : Kernel object
-        tol : float , default 1e-3
-        max_iter : int, default 100
-        """
+        """SVM usando SMO simplificado, com suporte a class_weight e kernel genérico."""
         self.C = C
-        self.class_weight = class_weight  # <- novo
+        self.class_weight = class_weight
         self.tol = tol
         self.max_iter = max_iter
-        if kernel is None:
-            self.kernel = Linear()
-        else:
-            self.kernel = kernel
-
+        self.kernel = kernel if kernel is not None else Linear()
         self.b = 0
         self.alpha = None
         self.K = None
@@ -42,16 +22,37 @@ class SVM(BaseEstimator):
         self._setup_input(X, y)
         self.K = np.zeros((self.n_samples, self.n_samples))
         for i in range(self.n_samples):
-            self.K[:, i] = self.kernel(self.X, self.X[i, :])
+            self.K[:, i] = self.kernel(self.X, self.X[i, :]).ravel()
+
         self.alpha = np.zeros(self.n_samples)
         self.sv_idx = np.arange(0, self.n_samples)
+        support_mask = self.alpha > 1e-5
+        self.support_vectors = self.X[support_mask]
+        self.support_vector_labels = self.y[support_mask]
+        self.support_vector_alphas = self.alpha[support_mask]
+
         return self._train()
-    
-    def _get_Ci__(self, i):
+
+    def _get_Ci(self, i):
+        """Retorna o C ajustado com base na classe da amostra i."""
         if self.class_weight is not None:
             return self.C * self.class_weight.get(self.y[i], 1.0)
         else:
             return self.C
+
+    def _find_bounds(self, i, j):
+        """Encontra os limites L e H ajustados para C_i e C_j."""
+        Ci = self._get_Ci(i)
+        Cj = self._get_Ci(j)
+
+        if self.y[i] != self.y[j]:
+            L = max(0, self.alpha[j] - self.alpha[i])
+            H = min(Cj, Ci - self.alpha[i] + self.alpha[j])
+        else:
+            L = max(0, self.alpha[i] + self.alpha[j] - Ci)
+            H = min(Ci, self.alpha[i] + self.alpha[j])
+
+        return L, H, Ci, Cj
 
     def _train(self):
         iters = 0
@@ -60,49 +61,40 @@ class SVM(BaseEstimator):
             alpha_prev = np.copy(self.alpha)
 
             for j in range(self.n_samples):
-                # Pick random i
                 i = self.random_index(j)
-
                 eta = 2.0 * self.K[i, j] - self.K[i, i] - self.K[j, j]
                 if eta >= 0:
                     continue
-                L, H = self._find_bounds(i, j)
 
-                # Error for current examples
+                L, H, Ci, Cj = self._find_bounds(i, j)
                 e_i, e_j = self._error(i), self._error(j)
-
-                # Save old alphas
                 alpha_io, alpha_jo = self.alpha[i], self.alpha[j]
 
-                # Update alpha
+                # Atualiza alpha[j]
                 self.alpha[j] -= (self.y[j] * (e_i - e_j)) / eta
                 self.alpha[j] = self.clip(self.alpha[j], H, L)
 
+                # Atualiza alpha[i]
                 self.alpha[i] = self.alpha[i] + self.y[i] * self.y[j] * (alpha_jo - self.alpha[j])
 
-                # Find intercept
-                b1 = (
-                    self.b - e_i - self.y[i] * (self.alpha[i] - alpha_io) * self.K[i, i]
-                    - self.y[j] * (self.alpha[j] - alpha_jo) * self.K[i, j]
-                )
-                b2 = (
-                    self.b - e_j - self.y[j] * (self.alpha[j] - alpha_jo) * self.K[j, j]
-                    - self.y[i] * (self.alpha[i] - alpha_io) * self.K[i, j]
-                )
-                if 0 < self.alpha[i] < self.C:
+                # Atualiza o bias b
+                b1 = self.b - e_i - self.y[i] * (self.alpha[i] - alpha_io) * self.K[i, i] \
+                     - self.y[j] * (self.alpha[j] - alpha_jo) * self.K[i, j]
+                b2 = self.b - e_j - self.y[j] * (self.alpha[j] - alpha_jo) * self.K[j, j] \
+                     - self.y[i] * (self.alpha[i] - alpha_io) * self.K[i, j]
+
+                if 0 < self.alpha[i] < Ci:
                     self.b = b1
-                elif 0 < self.alpha[j] < self.C:
+                elif 0 < self.alpha[j] < Cj:
                     self.b = b2
                 else:
                     self.b = 0.5 * (b1 + b2)
 
-            # Check convergence
             diff = np.linalg.norm(self.alpha - alpha_prev)
             if diff < self.tol:
                 break
-        logging.info("Convergence has reached after %s." % iters)
 
-        # Save support vectors index
+        logging.info("Convergence has reached after %s." % iters)
         self.sv_idx = np.where(self.alpha > 0)[0]
 
     def _predict(self, X=None):
@@ -114,37 +106,21 @@ class SVM(BaseEstimator):
 
     def _predict_row(self, X):
         k_v = self.kernel(self.X[self.sv_idx], X)
-        return np.dot((self.alpha[self.sv_idx] * self.y[self.sv_idx]).T, k_v.T) + self.b
+        return np.dot(self.alpha[self.sv_idx] * self.y[self.sv_idx], k_v.ravel()) + self.b
+
 
     def clip(self, alpha, H, L):
-        if alpha > H:
-            alpha = H
-        if alpha < L:
-            alpha = L
-        return alpha
+        return min(max(alpha, L), H)
 
     def _error(self, i):
-        """Error for single example."""
         return self._predict_row(self.X[i]) - self.y[i]
-
-    def _find_bounds(self, i, j):
-        """Find L and H such that L <= alpha <= H.
-        Also, alpha must satisfy the constraint 0 <= αlpha <= C.
-        """
-        Ci = self._get_Ci__(i)
-        Cj = self._get_Ci__(j)
-        if self.y[i] != self.y[j]:
-            L = max(0, self.alpha[j] - self.alpha[i])
-            
-            H = min(Cj, Ci - self.alpha[i] + self.alpha[j])
-
-        else:
-            L = max(0, self.alpha[i] + self.alpha[j] - self.C)
-            H = min(Ci, self.alpha[i] + self.alpha[j])
-        return L, H
 
     def random_index(self, z):
         i = z
         while i == z:
             i = np.random.randint(0, self.n_samples - 1)
         return i
+
+    def decision_function(self, X):
+        K = self.kernel(X, self.X)  # K.shape = (num_samples_input, num_samples_train)
+        return np.dot(K, self.alpha * self.y) + self.b

@@ -67,6 +67,11 @@ def compute_metrics(y_true, y_pred, pos_label=1):
         "confusion_matrix": np.array([[TN, FP], [FN, TP]])
     }
 
+def normalize_manual(X):
+    mean = np.mean(X, axis=0)
+    std = np.std(X, axis=0)
+    std[std == 0] = 1  # evita divisão por zero
+    return (X - mean) / std 
 
 def classification_from_dataframe(df):
     # Define a coluna de rótulo
@@ -93,6 +98,7 @@ def classification_from_dataframe(df):
 
     y = y_mapped.astype(int)
 
+    X = normalize_manual(X.values)  # normaliza antes do PCA
     # Redução para 2D
     X_2d = pca_manual(X, n_components=2)
 
@@ -103,7 +109,7 @@ def classification_from_dataframe(df):
     X_train, X_test, y_train, y_test = train_test_split_manual(X, y, test_size=0.2, random_state=42)
 
     minority_weights = [1.0, 5.0, 10.0, 20.0, 50.0]
-    kernels = [Linear(), RBF(gamma=0.1), RBF(gamma=0.5), RBF(gamma=1)]
+    kernels = [Linear(), RBF(gamma=0.001),RBF(gamma=0.01), RBF(gamma=0.1), RBF(gamma=0.5), RBF(gamma=1), RBF(gamma=10),]
 
     for kernel in kernels:
         print(f"\n==> Kernel: {kernel}")
@@ -121,9 +127,21 @@ def classification_from_dataframe(df):
             print("  Recall   :", metrics["recall"])
             print("  F1-score :", metrics["f1_score"])
             print("  Confusion matrix:\n", metrics["confusion_matrix"])
+            print("Alphas da classe 1 com kernel RBF:", model.alpha[model.y == 1])
+            print("Soma total das alphas classe 1:", np.sum(model.alpha[model.y == 1]))
+
 
 
 if __name__ == "__main__":
-    # Substitua pelo caminho do seu arquivo
+   
+    df = pd.read_csv("dataset_group_2_class_imbalance/dataset_1061_ar4.csv")
+    print(df)
+    classification_from_dataframe(df)
+
+    df = pd.read_csv("dataset_group_2_class_imbalance/dataset_1064_ar6.csv")
+    print(df)
+    classification_from_dataframe(df)
+
     df = pd.read_csv("dataset_group_2_class_imbalance/dataset_1065_kc3.csv")
+    print(df)
     classification_from_dataframe(df)

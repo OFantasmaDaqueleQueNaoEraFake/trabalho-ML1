@@ -29,7 +29,8 @@ class RBF(object):
     def __call__(self, x, y):
         x = np.atleast_2d(x)
         y = np.atleast_2d(y)
-        return np.exp(-self.gamma * dist.cdist(x, y) ** 2).flatten()
+        return np.exp(-self.gamma * dist.cdist(x, y) ** 2)  # NÃO usar .flatten()
+
 
     def __repr__(self):
         return "RBF kernel: " + str(self.gamma)

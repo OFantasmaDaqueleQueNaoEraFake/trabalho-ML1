@@ -23,7 +23,7 @@
   Confusion matrix:
  [[19  0]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [1.         1.         1.         1.         1.         1.
+Alphas da classe 1: [1.         1.         1.         1.         1.         1.
  1.         1.         1.         1.         1.         1.
  0.         1.         1.         0.73242434 0.98512505]
 Soma total das alphas classe 1: 15.717549393334831
@@ -36,7 +36,7 @@ Soma total das alphas classe 1: 15.717549393334831
   Confusion matrix:
  [[15  4]
  [ 0  3]]
-Alphas da classe 1 com kernel RBF: [5.         5.         5.         0.         5.         0.
+Alphas da classe 1: [5.         5.         5.         0.         5.         0.
  5.         5.         0.64143791 5.         5.         0.
  0.         2.31196273 5.         0.         0.        ]
 Soma total das alphas classe 1: 47.95340064225394
@@ -49,7 +49,7 @@ Soma total das alphas classe 1: 47.95340064225394
   Confusion matrix:
  [[17  2]
  [ 1  2]]
-Alphas da classe 1 com kernel RBF: [ 7.67562542 10.          0.          0.         10.          0.
+Alphas da classe 1: [ 7.67562542 10.          0.          0.         10.          0.
   2.53890714  4.602472    0.         10.          5.89087369  0.
   0.          0.          9.5426819   0.          0.        ]
 Soma total das alphas classe 1: 60.25056015563942
@@ -62,7 +62,7 @@ Soma total das alphas classe 1: 60.25056015563942
   Confusion matrix:
  [[18  1]
  [ 1  2]]
-Alphas da classe 1 com kernel RBF: [ 3.76679782e+00  2.00000000e+01  5.83608540e-02  1.23790909e-02
+Alphas da classe 1: [ 3.76679782e+00  2.00000000e+01  5.83608540e-02  1.23790909e-02
   6.84840523e+00  3.82989112e-02  3.45217266e+00  3.05030737e+00
   0.00000000e+00  1.30131883e+01  6.35954558e+00 -4.64038530e-17
   0.00000000e+00  5.51910078e-01  8.17113137e+00  0.00000000e+00
@@ -77,7 +77,7 @@ Soma total das alphas classe 1: 65.32249731032098
   Confusion matrix:
  [[19  0]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [3.42833507e+00 1.96195110e+01 6.43688182e-01 0.00000000e+00
+Alphas da classe 1: [3.42833507e+00 1.96195110e+01 6.43688182e-01 0.00000000e+00
  7.05837046e+00 1.11022302e-16 3.70572090e+00 2.42967941e+00
  0.00000000e+00 1.28810878e+01 5.75755038e+00 0.00000000e+00
  1.52707926e-03 0.00000000e+00 9.79886793e+00 0.00000000e+00
@@ -94,7 +94,7 @@ Soma total das alphas classe 1: 65.32433816834191
   Confusion matrix:
  [[19  0]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 17.0
 
   Class weight (1): 5.0
@@ -105,7 +105,7 @@ Soma total das alphas classe 1: 17.0
   Confusion matrix:
  [[19  0]
  [ 2  1]]
-Alphas da classe 1 com kernel RBF: [5.         5.         5.         2.72252457 5.         0.33873378
+Alphas da classe 1: [5.         5.         5.         2.72252457 5.         0.33873378
  5.         5.         5.         5.         5.         2.83414755
  0.         3.05702604 5.         0.         0.        ]
 Soma total das alphas classe 1: 58.95243193956961
@@ -118,7 +118,7 @@ Soma total das alphas classe 1: 58.95243193956961
   Confusion matrix:
  [[15  4]
  [ 0  3]]
-Alphas da classe 1 com kernel RBF: [ 4.43860198 10.          2.93324     0.07270054  3.56756524  2.
+Alphas da classe 1: [ 4.43860198 10.          2.93324     0.07270054  3.56756524  2.
   8.65751534  5.83944917  0.         10.          7.49092772  0.
   0.          0.         10.          0.          3.        ]
 Soma total das alphas classe 1: 68.0
@@ -131,7 +131,7 @@ Soma total das alphas classe 1: 68.0
   Confusion matrix:
  [[19  0]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [1.97763649e+00 1.76259973e+01 6.66133815e-16 1.77635684e-15
+Alphas da classe 1: [1.97763649e+00 1.76259973e+01 6.66133815e-16 1.77635684e-15
  1.23522990e-01 0.00000000e+00 0.00000000e+00 1.69968657e+01
  0.00000000e+00 1.34747965e+01 1.44401909e+01 0.00000000e+00
  0.00000000e+00 0.00000000e+00 3.36099012e+00 0.00000000e+00
@@ -146,7 +146,7 @@ Soma total das alphas classe 1: 68.0
   Confusion matrix:
  [[19  0]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [ 0.00000000e+00  3.18144171e+01 -8.88178420e-16  0.00000000e+00
+Alphas da classe 1: [ 0.00000000e+00  3.18144171e+01 -8.88178420e-16  0.00000000e+00
   0.00000000e+00  1.49518633e+00  2.54911236e+00  5.94539467e+00
   0.00000000e+00  1.65748509e+01  8.24484890e+00  1.00000000e+00
   3.76189682e-01  0.00000000e+00  0.00000000e+00  0.00000000e+00
@@ -163,7 +163,7 @@ Soma total das alphas classe 1: 68.0
   Confusion matrix:
  [[19  0]
  [ 2  1]]
-Alphas da classe 1 com kernel RBF: [1.         1.         1.         1.         1.         1.
+Alphas da classe 1: [1.         1.         1.         1.         1.         1.
  1.         1.         1.         1.         1.         1.
  0.89040409 1.         1.         0.7817792  1.        ]
 Soma total das alphas classe 1: 16.672183293944776
@@ -176,7 +176,7 @@ Soma total das alphas classe 1: 16.672183293944776
   Confusion matrix:
  [[15  4]
  [ 0  3]]
-Alphas da classe 1 com kernel RBF: [5.         5.         5.         0.         5.         0.
+Alphas da classe 1: [5.         5.         5.         0.         5.         0.
  5.         5.         0.         5.         5.         0.
  1.16858005 2.57683114 5.         0.58822989 0.        ]
 Soma total das alphas classe 1: 49.33364108103852
@@ -189,7 +189,7 @@ Soma total das alphas classe 1: 49.33364108103852
   Confusion matrix:
  [[15  4]
  [ 2  1]]
-Alphas da classe 1 com kernel RBF: [ 0.614176   10.          0.          0.         10.          0.
+Alphas da classe 1: [ 0.614176   10.          0.          0.         10.          0.
   2.23063626  9.65938813  0.         10.          7.12362233  0.
   0.83294248  0.         10.          1.18690713  0.        ]
 Soma total das alphas classe 1: 61.64767233263322
@@ -202,7 +202,7 @@ Soma total das alphas classe 1: 61.64767233263322
   Confusion matrix:
  [[16  3]
  [ 2  1]]
-Alphas da classe 1 com kernel RBF: [3.67891368e+00 1.81258592e+01 0.00000000e+00 0.00000000e+00
+Alphas da classe 1: [3.67891368e+00 1.81258592e+01 0.00000000e+00 0.00000000e+00
  6.51659502e+00 0.00000000e+00 0.00000000e+00 4.68206323e+00
  0.00000000e+00 1.51056596e+01 4.18453498e+00 0.00000000e+00
  1.11311435e+00 3.33066907e-16 9.84708743e+00 2.27001050e+00
@@ -217,7 +217,7 @@ Soma total das alphas classe 1: 65.52383805607406
   Confusion matrix:
  [[19  0]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [ 3.53334713e+00  2.04163278e+01  2.31601447e-01  0.00000000e+00
+Alphas da classe 1: [ 3.53334713e+00  2.04163278e+01  2.31601447e-01  0.00000000e+00
   4.44089210e-16 -2.77555756e-17 -8.88178420e-16  4.67509809e+00
   0.00000000e+00  2.35914570e+01  1.00720480e+01  0.00000000e+00
   7.66205377e-01  0.00000000e+00  8.21666815e-01  2.23120484e+00
@@ -234,7 +234,7 @@ Soma total das alphas classe 1: 66.34074620665481
   Confusion matrix:
  [[19  0]
  [ 2  1]]
-Alphas da classe 1 com kernel RBF: [1.         1.         1.         0.06235446 1.         0.86505556
+Alphas da classe 1: [1.         1.         1.         0.06235446 1.         0.86505556
  1.         1.         1.         1.         1.         1.
  1.         1.         1.         1.         0.        ]
 Soma total das alphas classe 1: 14.927410015468933
@@ -247,7 +247,7 @@ Soma total das alphas classe 1: 14.927410015468933
   Confusion matrix:
  [[13  6]
  [ 1  2]]
-Alphas da classe 1 com kernel RBF: [5.00000000e+00 5.00000000e+00 2.25132887e+00 2.71229752e-01
+Alphas da classe 1: [5.00000000e+00 5.00000000e+00 2.25132887e+00 2.71229752e-01
  5.00000000e+00 5.18508340e-01 3.62811457e+00 5.00000000e+00
  1.70580091e+00 5.00000000e+00 2.24118101e+00 4.55570357e-03
  7.94750220e-01 2.07115640e+00 5.00000000e+00 7.73981572e-01
@@ -262,7 +262,7 @@ Soma total das alphas classe 1: 44.42424098203793
   Confusion matrix:
  [[14  5]
  [ 0  3]]
-Alphas da classe 1 com kernel RBF: [ 0.52165566 10.          2.12738829  0.          1.47683274  0.58858405
+Alphas da classe 1: [ 0.52165566 10.          2.12738829  0.          1.47683274  0.58858405
   6.73892516  6.32803874  2.50546195 10.          1.91653609  0.
   0.73226806  0.65913821  6.39804656  0.84507474  0.26935071]
 Soma total das alphas classe 1: 51.10730094036365
@@ -275,7 +275,7 @@ Soma total das alphas classe 1: 51.10730094036365
   Confusion matrix:
  [[ 5 14]
  [ 0  3]]
-Alphas da classe 1 com kernel RBF: [0.00000000e+00 2.00000000e+01 6.80552581e+00 5.07607733e-01
+Alphas da classe 1: [0.00000000e+00 2.00000000e+01 6.80552581e+00 5.07607733e-01
  0.00000000e+00 6.01088367e-01 1.43530800e+00 6.53898258e+00
  6.24075676e-01 8.36118909e+00 2.50254158e+00 0.00000000e+00
  7.58430493e-01 3.73482307e+00 5.11504126e+00 7.92951713e-01
@@ -290,7 +290,7 @@ Soma total das alphas classe 1: 57.77756537643067
   Confusion matrix:
  [[ 5 14]
  [ 0  3]]
-Alphas da classe 1 com kernel RBF: [ 0.06248958 20.2512113   5.92432719  0.0796876   0.          0.55744516
+Alphas da classe 1: [ 0.06248958 20.2512113   5.92432719  0.0796876   0.          0.55744516
   2.93994179  6.97143958  1.35551729  7.60646849  2.37687126  0.
   0.74850911  2.80793152  4.80452875  0.90320439  0.17537576]
 Soma total das alphas classe 1: 57.56494878410468
@@ -305,7 +305,7 @@ Soma total das alphas classe 1: 57.56494878410468
   Confusion matrix:
  [[19  0]
  [ 2  1]]
-Alphas da classe 1 com kernel RBF: [1.         1.         1.         1.         1.         1.
+Alphas da classe 1: [1.         1.         1.         1.         1.         1.
  1.         1.         1.         1.         1.         1.
  1.         1.         1.         1.         0.65314853]
 Soma total das alphas classe 1: 16.653148530422996
@@ -318,7 +318,7 @@ Soma total das alphas classe 1: 16.653148530422996
   Confusion matrix:
  [[11  8]
  [ 1  2]]
-Alphas da classe 1 com kernel RBF: [3.35174857 5.         3.95206846 1.15599543 0.62623574 0.79549233
+Alphas da classe 1: [3.35174857 5.         3.95206846 1.15599543 0.62623574 0.79549233
  3.80463162 2.68819255 1.00308181 5.         1.97275258 0.61928355
  0.98895023 3.3039589  3.46190862 0.85421435 0.25917203]
 Soma total das alphas classe 1: 38.837686779332834
@@ -331,7 +331,7 @@ Soma total das alphas classe 1: 38.837686779332834
   Confusion matrix:
  [[ 9 10]
  [ 1  2]]
-Alphas da classe 1 com kernel RBF: [2.96714097 8.31231625 4.1497094  1.1898676  0.         0.79034754
+Alphas da classe 1: [2.96714097 8.31231625 4.1497094  1.1898676  0.         0.79034754
  3.83477424 1.86766495 1.00201038 7.57180647 1.97387093 0.59624162
  0.98897567 3.28711704 3.72991248 0.85651987 0.23717371]
 Soma total das alphas classe 1: 43.35544909751603
@@ -344,7 +344,7 @@ Soma total das alphas classe 1: 43.35544909751603
   Confusion matrix:
  [[15  4]
  [ 2  1]]
-Alphas da classe 1 com kernel RBF: [2.94444056 8.30945305 4.16539889 1.1429129  0.         0.78941142
+Alphas da classe 1: [2.94444056 8.30945305 4.16539889 1.1429129  0.         0.78941142
  3.83413035 1.87310686 1.00270884 7.56409802 1.97308198 0.62565073
  0.98791855 3.28499887 3.72741204 0.84886343 0.26492381]
 Soma total das alphas classe 1: 43.33851031145461
@@ -357,7 +357,7 @@ Soma total das alphas classe 1: 43.33851031145461
   Confusion matrix:
  [[ 6 13]
  [ 1  2]]
-Alphas da classe 1 com kernel RBF: [2.9430753  8.3051133  4.16666371 1.15155108 0.         0.78906239
+Alphas da classe 1: [2.9430753  8.3051133  4.16666371 1.15155108 0.         0.78906239
  3.83662106 1.86622845 1.0021154  7.57885688 1.974168   0.61988855
  0.98733023 3.28434804 3.7295175  0.84822658 0.26187433]
 Soma total das alphas classe 1: 43.34464079961985
@@ -372,7 +372,7 @@ Soma total das alphas classe 1: 43.34464079961985
   Confusion matrix:
  [[19  0]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 17.0
 
   Class weight (1): 5.0
@@ -383,7 +383,7 @@ Soma total das alphas classe 1: 17.0
   Confusion matrix:
  [[11  8]
  [ 1  2]]
-Alphas da classe 1 com kernel RBF: [3.17952068 3.6305764  3.42513163 1.24675688 0.         1.06127468
+Alphas da classe 1: [3.17952068 3.6305764  3.42513163 1.24675688 0.         1.06127468
  3.64930216 2.18982138 1.2608233  4.76045974 1.75897432 0.96097673
  1.12344574 3.22318041 2.03705372 1.03136593 0.69758978]
 Soma total das alphas classe 1: 35.236253484539546
@@ -396,7 +396,7 @@ Soma total das alphas classe 1: 35.236253484539546
   Confusion matrix:
  [[11  8]
  [ 1  2]]
-Alphas da classe 1 com kernel RBF: [3.17969354 3.62777251 3.42501795 1.24650419 0.         1.06083388
+Alphas da classe 1: [3.17969354 3.62777251 3.42501795 1.24650419 0.         1.06083388
  3.64860398 2.1898683  1.26085183 4.76200446 1.75936244 0.96148679
  1.12347292 3.22323606 2.03891909 1.03157518 0.6977706 ]
 Soma total das alphas classe 1: 35.23697369941274
@@ -409,7 +409,7 @@ Soma total das alphas classe 1: 35.23697369941274
   Confusion matrix:
  [[11  8]
  [ 1  2]]
-Alphas da classe 1 com kernel RBF: [3.17991193 3.62783232 3.42509286 1.24713329 0.         1.06075878
+Alphas da classe 1: [3.17991193 3.62783232 3.42509286 1.24713329 0.         1.06075878
  3.64839116 2.19018755 1.26044013 4.76157236 1.75934161 0.96062129
  1.12345328 3.2231612  2.03856238 1.03155218 0.69723749]
 Soma total das alphas classe 1: 35.23524982078164
@@ -422,7 +422,7 @@ Soma total das alphas classe 1: 35.23524982078164
   Confusion matrix:
  [[11  8]
  [ 1  2]]
-Alphas da classe 1 com kernel RBF: [3.17936942 3.62999309 3.42484918 1.24687409 0.         1.06106941
+Alphas da classe 1: [3.17936942 3.62999309 3.42484918 1.24687409 0.         1.06106941
  3.64886877 2.18952508 1.26057276 4.76102704 1.75934225 0.96125881
  1.12322672 3.22326048 2.038357   1.03144087 0.69756508]
 Soma total das alphas classe 1: 35.23660005250229
@@ -437,7 +437,7 @@ Soma total das alphas classe 1: 35.23660005250229
   Confusion matrix:
  [[18  1]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 17.0
 
   Class weight (1): 5.0
@@ -448,7 +448,7 @@ Soma total das alphas classe 1: 17.0
   Confusion matrix:
  [[16  3]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [2.25871877 1.50587072 1.80595723 2.26108085 1.38254515 1.49609843
+Alphas da classe 1: [2.25871877 1.50587072 1.80595723 2.26108085 1.38254515 1.49609843
  1.6488018  1.52629196 1.49610004 1.35593432 1.49725309 1.50023674
  1.49622589 1.57075976 1.49611275 1.49622589 1.49564476]
 Soma total das alphas classe 1: 27.289858164025624
@@ -461,7 +461,7 @@ Soma total das alphas classe 1: 27.289858164025624
   Confusion matrix:
  [[16  3]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [2.25859497 1.50582648 1.8059104  2.26104404 1.38262976 1.49612208
+Alphas da classe 1: [2.25859497 1.50582648 1.8059104  2.26104404 1.38262976 1.49612208
  1.64864561 1.52635997 1.49616194 1.35591647 1.49697565 1.50031728
  1.4962269  1.57080927 1.49602819 1.49612185 1.49566781]
 Soma total das alphas classe 1: 27.289358668965303
@@ -474,7 +474,7 @@ Soma total das alphas classe 1: 27.289358668965303
   Confusion matrix:
  [[16  3]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [2.2585932  1.50588108 1.80591061 2.26105588 1.38259197 1.49608632
+Alphas da classe 1: [2.2585932  1.50588108 1.80591061 2.26105588 1.38259197 1.49608632
  1.64859879 1.52635374 1.49613144 1.35599559 1.49721266 1.5004309
  1.4960844  1.5707323  1.49608832 1.4960797  1.49568123]
 Soma total das alphas classe 1: 27.28950812881825
@@ -487,7 +487,7 @@ Soma total das alphas classe 1: 27.28950812881825
   Confusion matrix:
  [[16  3]
  [ 3  0]]
-Alphas da classe 1 com kernel RBF: [2.25859265 1.50582456 1.8055533  2.26106252 1.38261271 1.49608071
+Alphas da classe 1: [2.25859265 1.50582456 1.8055533  2.26106252 1.38261271 1.49608071
  1.64859046 1.52634677 1.49617447 1.35583596 1.49716586 1.50025072
  1.49613019 1.57074952 1.49611941 1.49610435 1.49572516]
 Soma total das alphas classe 1: 27.288919303052648
@@ -516,7 +516,7 @@ Soma total das alphas classe 1: 27.288919303052648
   Confusion matrix:
  [[10  9]
  [ 0  2]]
-Alphas da classe 1 com kernel RBF: [0.16289121 0.         1.         1.         1.         1.
+Alphas da classe 1: [0.16289121 0.         1.         1.         1.         1.
  1.         1.         1.         1.         1.         1.
  1.        ]
 Soma total das alphas classe 1: 11.162891205386192
@@ -529,7 +529,7 @@ Soma total das alphas classe 1: 11.162891205386192
   Confusion matrix:
  [[18  1]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [0.14814855 0.         5.         5.         5.         5.
+Alphas da classe 1: [0.14814855 0.         5.         5.         5.         5.
  3.179958   1.1097799  5.         5.         5.         5.
  0.06346863]
 Soma total das alphas classe 1: 44.501355074724536
@@ -542,7 +542,7 @@ Soma total das alphas classe 1: 44.501355074724536
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [4.16749313e-02 5.36154781e-02 1.00000000e+01 4.57645441e+00
+Alphas da classe 1: [4.16749313e-02 5.36154781e-02 1.00000000e+01 4.57645441e+00
  9.68950129e+00 9.91690335e+00 2.16999305e+00 2.41974979e+00
  5.55437660e-01 9.39129272e+00 6.36815755e+00 1.00000000e+01
  1.82145965e-16]
@@ -556,7 +556,7 @@ Soma total das alphas classe 1: 65.18278022592243
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 0.13045144  0.02696154 12.7282293   6.74610354  5.909643   12.13637985
+Alphas da classe 1: [ 0.13045144  0.02696154 12.7282293   6.74610354  5.909643   12.13637985
   2.33164501  1.11954535  2.56630342 12.06954485  3.13605913  7.82875966
   0.26916479]
 Soma total das alphas classe 1: 66.99879088723767
@@ -569,7 +569,7 @@ Soma total das alphas classe 1: 66.99879088723767
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 0.05710471  0.0942635   7.383419    6.76334359  6.88310416 13.85993018
+Alphas da classe 1: [ 0.05710471  0.0942635   7.383419    6.76334359  6.88310416 13.85993018
   1.03555486  2.23514082  3.2836878  11.09890343  3.38617872 10.88823945
   0.03073439]
 Soma total das alphas classe 1: 66.99960459700705
@@ -584,7 +584,7 @@ Soma total das alphas classe 1: 66.99960459700705
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 13.0
 
   Class weight (1): 5.0
@@ -595,7 +595,7 @@ Soma total das alphas classe 1: 13.0
   Confusion matrix:
  [[16  3]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [2.44539098 0.         5.         5.         5.         5.
+Alphas da classe 1: [2.44539098 0.         5.         5.         5.         5.
  5.         5.         5.         5.         5.         5.
  0.        ]
 Soma total das alphas classe 1: 52.44539097549154
@@ -608,7 +608,7 @@ Soma total das alphas classe 1: 52.44539097549154
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [7.21138931e-02 1.77635684e-15 1.00000000e+01 8.27793224e+00
+Alphas da classe 1: [7.21138931e-02 1.77635684e-15 1.00000000e+01 8.27793224e+00
  1.00000000e+01 4.62527328e+00 2.22044605e-16 7.09679449e+00
  1.00000000e+00 1.00000000e+01 3.92788611e+00 1.00000000e+01
  0.00000000e+00]
@@ -622,7 +622,7 @@ Soma total das alphas classe 1: 65.0
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 0.12001118  0.          3.82713289  5.52240395  2.84789511 13.23502913
+Alphas da classe 1: [ 0.12001118  0.          3.82713289  5.52240395  2.84789511 13.23502913
   0.13021475  0.28814515  7.16827431  9.50067776  5.77670306 17.73828736
   0.84522535]
 Soma total das alphas classe 1: 67.00000000000001
@@ -635,7 +635,7 @@ Soma total das alphas classe 1: 67.00000000000001
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 0.          0.25649848  0.95833962  9.40802382  0.8990155   0.66515058
+Alphas da classe 1: [ 0.          0.25649848  0.95833962  9.40802382  0.8990155   0.66515058
   3.83648529  0.          0.         17.94945256 13.19415052 18.90039228
   0.92582501]
 Soma total das alphas classe 1: 66.99333366029322
@@ -650,7 +650,7 @@ Soma total das alphas classe 1: 66.99333366029322
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [0.77886531 0.40413866 1.         1.         1.         1.
+Alphas da classe 1: [0.77886531 0.40413866 1.         1.         1.         1.
  1.         1.         1.         1.         1.         1.
  1.        ]
 Soma total das alphas classe 1: 12.183003969501845
@@ -663,7 +663,7 @@ Soma total das alphas classe 1: 12.183003969501845
   Confusion matrix:
  [[18  1]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [0.5935358  0.05875153 5.         5.         5.         5.
+Alphas da classe 1: [0.5935358  0.05875153 5.         5.         5.         5.
  5.         0.         5.         5.         5.         5.
  0.        ]
 Soma total das alphas classe 1: 45.652287330404775
@@ -676,7 +676,7 @@ Soma total das alphas classe 1: 45.652287330404775
   Confusion matrix:
  [[11  8]
  [ 1  1]]
-Alphas da classe 1 com kernel RBF: [ 0.15354784  0.         10.          6.86859571  4.36763594  9.93087346
+Alphas da classe 1: [ 0.15354784  0.         10.          6.86859571  4.36763594  9.93087346
   3.87320831  0.          4.55999433 10.          5.38390531 10.
   0.27389997]
 Soma total das alphas classe 1: 65.41166086527471
@@ -689,7 +689,7 @@ Soma total das alphas classe 1: 65.41166086527471
   Confusion matrix:
  [[12  7]
  [ 1  1]]
-Alphas da classe 1 com kernel RBF: [ 0.72580816  0.         14.9090339   0.46726976  3.28812845 14.20344227
+Alphas da classe 1: [ 0.72580816  0.         14.9090339   0.46726976  3.28812845 14.20344227
   1.9300061   1.5577563   3.60779006  9.14896521  9.7231965   4.66519948
   0.16846566]
 Soma total das alphas classe 1: 64.39506184590397
@@ -702,7 +702,7 @@ Soma total das alphas classe 1: 64.39506184590397
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 0.19435241  0.          9.22322661  8.62413765  4.77449188  5.35528079
+Alphas da classe 1: [ 0.19435241  0.          9.22322661  8.62413765  4.77449188  5.35528079
   0.59161339  1.73605794  6.24314635 18.30700035  0.76183786 10.8390011
   0.34985367]
 Soma total das alphas classe 1: 67.0
@@ -717,7 +717,7 @@ Soma total das alphas classe 1: 67.0
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [0.84395133 0.84195135 1.         1.         1.         1.
+Alphas da classe 1: [0.84395133 0.84195135 1.         1.         1.         1.
  1.         1.         1.         1.         1.         1.
  1.        ]
 Soma total das alphas classe 1: 12.685902674487842
@@ -730,7 +730,7 @@ Soma total das alphas classe 1: 12.685902674487842
   Confusion matrix:
  [[16  3]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [0.54747144 0.54771435 5.         5.         5.         5.
+Alphas da classe 1: [0.54747144 0.54771435 5.         5.         5.         5.
  1.74451359 1.61968037 5.         5.         5.         5.
  0.97934293]
 Soma total das alphas classe 1: 45.438722684013115
@@ -743,7 +743,7 @@ Soma total das alphas classe 1: 45.438722684013115
   Confusion matrix:
  [[ 2 17]
  [ 0  2]]
-Alphas da classe 1 com kernel RBF: [ 0.29728638  0.2398096  10.          0.          4.76225185 10.
+Alphas da classe 1: [ 0.29728638  0.2398096  10.          0.          4.76225185 10.
   0.18317495  2.28405894  5.91124388 10.          9.00768015 10.
   0.54173713]
 Soma total das alphas classe 1: 63.227242885208206
@@ -756,7 +756,7 @@ Soma total das alphas classe 1: 63.227242885208206
   Confusion matrix:
  [[ 0 19]
  [ 0  2]]
-Alphas da classe 1 com kernel RBF: [1.52141207e-03 1.30046114e-01 1.53547297e+01 1.83154312e+00
+Alphas da classe 1: [1.52141207e-03 1.30046114e-01 1.53547297e+01 1.83154312e+00
  2.99204399e+00 1.22007930e+00 7.48657678e-01 1.72676066e+00
  5.45965047e+00 1.31302059e+01 9.35654315e+00 1.48156096e+01
  2.32608956e-01]
@@ -770,7 +770,7 @@ Soma total das alphas classe 1: 67.0
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 0.          0.13209605  8.25376456  1.96032384  5.94230643  4.04685899
+Alphas da classe 1: [ 0.          0.13209605  8.25376456  1.96032384  5.94230643  4.04685899
   0.53828078  1.48288049  5.60932791 14.51781693  8.07951428 15.94697618
   0.48985357]
 Soma total das alphas classe 1: 67.0
@@ -785,7 +785,7 @@ Soma total das alphas classe 1: 67.0
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 13.0
 
   Class weight (1): 5.0
@@ -796,7 +796,7 @@ Soma total das alphas classe 1: 13.0
   Confusion matrix:
  [[13  6]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [0.85613167 0.85620409 5.         4.55236458 5.         5.
+Alphas da classe 1: [0.85613167 0.85620409 5.         4.55236458 5.         5.
  3.00495704 0.55348281 3.5005395  5.         5.         5.
  0.87994061]
 Soma total das alphas classe 1: 44.203620301342454
@@ -809,7 +809,7 @@ Soma total das alphas classe 1: 44.203620301342454
   Confusion matrix:
  [[16  3]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 0.60356861  0.59844375  9.98973248  0.          9.69152397  4.09997228
+Alphas da classe 1: [ 0.60356861  0.59844375  9.98973248  0.          9.69152397  4.09997228
   2.81534366  0.37269087  3.3542655  10.          6.41749715 10.
   0.5820698 ]
 Soma total das alphas classe 1: 58.52510805338097
@@ -822,7 +822,7 @@ Soma total das alphas classe 1: 58.52510805338097
   Confusion matrix:
  [[ 8 11]
  [ 1  1]]
-Alphas da classe 1 com kernel RBF: [ 0.3689701   0.48626088  8.29066857  0.         10.45242704  3.82148412
+Alphas da classe 1: [ 0.3689701   0.48626088  8.29066857  0.         10.45242704  3.82148412
   2.53580072  0.57669045  2.91494664 12.30178989  5.57265846 17.64926523
   0.62648803]
 Soma total das alphas classe 1: 65.59745013456661
@@ -835,7 +835,7 @@ Soma total das alphas classe 1: 65.59745013456661
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 0.39354968  0.15793813  4.10874308  2.5037785   7.22284469  8.27584869
+Alphas da classe 1: [ 0.39354968  0.15793813  4.10874308  2.5037785   7.22284469  8.27584869
   2.68832397  0.56711213  3.27214873 11.3721616   5.77030508 19.01770429
   0.65439183]
 Soma total das alphas classe 1: 66.00485038512609
@@ -850,7 +850,7 @@ Soma total das alphas classe 1: 66.00485038512609
   Confusion matrix:
  [[19  0]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 13.0
 
   Class weight (1): 5.0
@@ -861,7 +861,7 @@ Soma total das alphas classe 1: 13.0
   Confusion matrix:
  [[16  3]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [1.09213399 1.09249157 5.         3.21377108 5.         5.
+Alphas da classe 1: [1.09213399 1.09249157 5.         3.21377108 5.         5.
  2.86101454 0.87418649 2.82984384 5.         5.         5.
  1.09366695]
 Soma total das alphas classe 1: 43.05710845986079
@@ -874,7 +874,7 @@ Soma total das alphas classe 1: 43.05710845986079
   Confusion matrix:
  [[10  9]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 0.845352    0.84669152  3.40478492  0.          9.73107319  9.12797038
+Alphas da classe 1: [ 0.845352    0.84669152  3.40478492  0.          9.73107319  9.12797038
   2.6477144   0.65449124  2.59543413 10.          6.30444683 10.
   0.84416876]
 Soma total das alphas classe 1: 57.002127371162615
@@ -887,7 +887,7 @@ Soma total das alphas classe 1: 57.002127371162615
   Confusion matrix:
  [[ 8 11]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 0.77694366  0.36640349  5.73123139  0.          9.62488883  6.03237372
+Alphas da classe 1: [ 0.77694366  0.36640349  5.73123139  0.          9.62488883  6.03237372
   2.58229037  0.29788498  2.52709211 12.08786357  6.19061032 18.75441364
   0.78100093]
 Soma total das alphas classe 1: 65.75299701997717
@@ -900,7 +900,7 @@ Soma total das alphas classe 1: 65.75299701997717
   Confusion matrix:
  [[ 8 11]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 0.65179975  0.63055843  0.          0.          9.4814586  11.61853592
+Alphas da classe 1: [ 0.65179975  0.63055843  0.          0.          9.4814586  11.61853592
   2.47432214  0.46954329  2.36730471 12.40729254  6.1189889  19.08929979
   0.62906951]
 Soma total das alphas classe 1: 65.93817354961071
@@ -915,7 +915,7 @@ Soma total das alphas classe 1: 65.93817354961071
   Confusion matrix:
  [[18  1]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 13.0
 
   Class weight (1): 5.0
@@ -926,7 +926,7 @@ Soma total das alphas classe 1: 13.0
   Confusion matrix:
  [[16  3]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [1.40400343 1.40405851 4.43425531 1.39314278 4.09791345 0.94013076
+Alphas da classe 1: [1.40400343 1.40405851 4.43425531 1.39314278 4.09791345 0.94013076
  1.53233519 1.40404356 1.59614413 5.         2.68596957 5.
  1.40412072]
 Soma total das alphas classe 1: 32.29611740383168
@@ -939,7 +939,7 @@ Soma total das alphas classe 1: 32.29611740383168
   Confusion matrix:
  [[16  3]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 1.38806168  1.38822369  4.41851429  1.38020309  4.08701115  0.94263761
+Alphas da classe 1: [ 1.38806168  1.38822369  4.41851429  1.38020309  4.08701115  0.94263761
   1.51831018  1.38839936  1.58311126  5.62484301  2.6723919  10.
   1.38809525]
 Soma total das alphas classe 1: 37.779802474727965
@@ -952,7 +952,7 @@ Soma total das alphas classe 1: 37.779802474727965
   Confusion matrix:
  [[15  4]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 1.34806482  1.34780987  4.41571459  1.34933751  4.05796296  0.91974887
+Alphas da classe 1: [ 1.34806482  1.34780987  4.41571459  1.34933751  4.05796296  0.91974887
   1.48254597  1.34822557  1.54987025  5.60268783  2.63885094 14.04995498
   1.34831181]
 Soma total das alphas classe 1: 41.45908597977624
@@ -965,7 +965,7 @@ Soma total das alphas classe 1: 41.45908597977624
   Confusion matrix:
  [[15  4]
  [ 2  0]]
-Alphas da classe 1 com kernel RBF: [ 1.34812527  1.34845659  4.40728349  1.3496969   4.05769875  0.92824797
+Alphas da classe 1: [ 1.34812527  1.34845659  4.40728349  1.3496969   4.05769875  0.92824797
   1.48213627  1.34829954  1.5504833   5.60195774  2.6388173  14.05036999
   1.34801165]
 Soma total das alphas classe 1: 41.45958477044354
@@ -994,7 +994,7 @@ Soma total das alphas classe 1: 41.45958477044354
   Confusion matrix:
  [[83  0]
  [ 9  0]]
-Alphas da classe 1 com kernel RBF: [1.         1.         1.         1.         1.         1.
+Alphas da classe 1: [1.         1.         1.         1.         1.         1.
  1.         1.         1.         1.         1.         1.
  1.         1.         1.         1.         1.         1.
  1.         1.         1.         1.         1.         1.
@@ -1010,7 +1010,7 @@ Soma total das alphas classe 1: 33.26727121117498
   Confusion matrix:
  [[77  6]
  [ 7  2]]
-Alphas da classe 1 com kernel RBF: [0.88834726 0.28893686 5.         5.         5.         5.
+Alphas da classe 1: [0.88834726 0.28893686 5.         5.         5.         5.
  5.         5.         3.51869269 3.27483118 5.         5.
  5.         5.         0.         5.         5.         5.
  5.         1.82704418 5.         5.         5.         5.
@@ -1026,7 +1026,7 @@ Soma total das alphas classe 1: 137.92066981783285
   Confusion matrix:
  [[78  5]
  [ 7  2]]
-Alphas da classe 1 com kernel RBF: [ 1.61305577  1.74947264  0.         10.          3.69339015 10.
+Alphas da classe 1: [ 1.61305577  1.74947264  0.         10.          3.69339015 10.
  10.          2.0365494   2.03524081  0.         10.         10.
  10.         10.          0.87324494  3.28686017  3.26502262 10.
   6.56416398  0.66563498 10.          9.02598591 10.          0.
@@ -1042,7 +1042,7 @@ Soma total das alphas classe 1: 197.48398474495252
   Confusion matrix:
  [[81  2]
  [ 8  1]]
-Alphas da classe 1 com kernel RBF: [7.19081283e-01 2.95492839e+00 0.00000000e+00 2.00000000e+01
+Alphas da classe 1: [7.19081283e-01 2.95492839e+00 0.00000000e+00 2.00000000e+01
  2.68475668e+00 1.06273698e+00 1.74615884e+01 2.22239489e+00
  1.70664546e+00 0.00000000e+00 1.74178067e+01 1.46145768e+01
  2.00000000e+01 9.79926691e+00 7.00394224e-01 2.54674762e-03
@@ -1061,7 +1061,7 @@ Soma total das alphas classe 1: 240.96315252497826
   Confusion matrix:
  [[18 65]
  [ 0  9]]
-Alphas da classe 1 com kernel RBF: [8.30950757e-01 3.73775623e+00 0.00000000e+00 4.99993158e+01
+Alphas da classe 1: [8.30950757e-01 3.73775623e+00 0.00000000e+00 4.99993158e+01
  3.87570892e+00 0.00000000e+00 1.05613601e+01 3.23689547e+00
  2.57170452e+00 1.11022302e-16 1.54951213e+01 8.34913533e+00
  5.00000000e+01 9.10230200e+00 4.71457496e-01 2.10669940e+00
@@ -1082,7 +1082,7 @@ Soma total das alphas classe 1: 297.3212249441054
   Confusion matrix:
  [[83  0]
  [ 9  0]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
  1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 34.0
 
@@ -1094,7 +1094,7 @@ Soma total das alphas classe 1: 34.0
   Confusion matrix:
  [[57 26]
  [ 1  8]]
-Alphas da classe 1 com kernel RBF: [0.         0.         5.         5.         5.         5.
+Alphas da classe 1: [0.         0.         5.         5.         5.         5.
  5.         5.         5.         5.         5.         5.
  5.         5.         0.         5.         5.         5.
  5.         1.55017833 5.         5.         5.         5.
@@ -1110,7 +1110,7 @@ Soma total das alphas classe 1: 142.52723364596875
   Confusion matrix:
  [[70 13]
  [ 4  5]]
-Alphas da classe 1 com kernel RBF: [ 0.          0.          4.70779946 10.          2.96153563 10.
+Alphas da classe 1: [ 0.          0.          4.70779946 10.          2.96153563 10.
  10.          0.616499    0.          0.         10.         10.
  10.         10.          0.          2.48581643 10.         10.
  10.          0.         10.         10.         10.         10.
@@ -1126,7 +1126,7 @@ Soma total das alphas classe 1: 224.4979085034148
   Confusion matrix:
  [[58 25]
  [ 2  7]]
-Alphas da classe 1 com kernel RBF: [ 0.          0.83927399  0.         20.          0.         17.63699516
+Alphas da classe 1: [ 0.          0.83927399  0.         20.          0.         17.63699516
  20.          0.          0.          0.         19.66252366 16.37775948
  20.         16.50422194  0.          0.          0.         20.
   0.63001134  0.         20.         12.24425599 20.          0.
@@ -1142,7 +1142,7 @@ Soma total das alphas classe 1: 293.20111250834213
   Confusion matrix:
  [[66 17]
  [ 5  4]]
-Alphas da classe 1 com kernel RBF: [4.63548917e+00 5.36888108e+00 0.00000000e+00 5.00000000e+01
+Alphas da classe 1: [4.63548917e+00 5.36888108e+00 0.00000000e+00 5.00000000e+01
  0.00000000e+00 0.00000000e+00 4.05406460e+00 6.63395748e-01
  6.87613752e-01 0.00000000e+00 4.44089210e-16 2.52935252e+00
  5.00000000e+01 4.95052865e+00 8.55008894e-01 7.18941846e-01
@@ -1163,7 +1163,7 @@ Soma total das alphas classe 1: 330.03221822427935
   Confusion matrix:
  [[83  0]
  [ 9  0]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
  1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 34.0
 
@@ -1175,7 +1175,7 @@ Soma total das alphas classe 1: 34.0
   Confusion matrix:
  [[76  7]
  [ 7  2]]
-Alphas da classe 1 com kernel RBF: [0.         0.         5.         5.         5.         5.
+Alphas da classe 1: [0.         0.         5.         5.         5.         5.
  5.         5.         0.         2.3203941  5.         5.
  5.         5.         0.18898942 5.         5.         5.
  5.         0.         5.         5.         5.         5.
@@ -1191,7 +1191,7 @@ Soma total das alphas classe 1: 134.08091683837145
   Confusion matrix:
  [[82  1]
  [ 9  0]]
-Alphas da classe 1 com kernel RBF: [0.00000000e+00 4.54388913e-01 1.77635684e-15 1.00000000e+01
+Alphas da classe 1: [0.00000000e+00 4.54388913e-01 1.77635684e-15 1.00000000e+01
  5.56467940e+00 1.00000000e+01 1.00000000e+01 5.82522901e+00
  1.13827697e-02 4.97566245e+00 1.00000000e+01 1.00000000e+01
  1.00000000e+01 7.24308455e+00 1.79019937e+00 1.15308001e+00
@@ -1210,7 +1210,7 @@ Soma total das alphas classe 1: 197.13736942468188
   Confusion matrix:
  [[55 28]
  [ 1  8]]
-Alphas da classe 1 com kernel RBF: [0.00000000e+00 5.40135000e-01 9.16322287e+00 2.00000000e+01
+Alphas da classe 1: [0.00000000e+00 5.40135000e-01 9.16322287e+00 2.00000000e+01
  2.62436973e+00 0.00000000e+00 2.00000000e+01 2.87493729e+00
  1.29566647e-01 4.21177507e+00 1.30784893e+01 9.03759243e+00
  2.00000000e+01 7.83044937e+00 0.00000000e+00 1.54153945e+00
@@ -1229,7 +1229,7 @@ Soma total das alphas classe 1: 236.60165542514915
   Confusion matrix:
  [[83  0]
  [ 9  0]]
-Alphas da classe 1 com kernel RBF: [0.00000000e+00 1.19076430e+00 1.21952240e+01 3.88216196e+01
+Alphas da classe 1: [0.00000000e+00 1.19076430e+00 1.21952240e+01 3.88216196e+01
  4.65588735e-01 0.00000000e+00 3.01931046e+01 5.95795997e+00
  0.00000000e+00 0.00000000e+00 3.30709582e-03 3.35654350e+00
  5.00000000e+01 1.19952967e+01 1.35752891e+00 4.90199276e+00
@@ -1250,7 +1250,7 @@ Soma total das alphas classe 1: 297.54784831675215
   Confusion matrix:
  [[59 24]
  [ 8  1]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
  1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 34.0
 
@@ -1262,7 +1262,7 @@ Soma total das alphas classe 1: 34.0
   Confusion matrix:
  [[73 10]
  [ 7  2]]
-Alphas da classe 1 com kernel RBF: [1.81344723 0.07014708 5.         5.         0.         5.
+Alphas da classe 1: [1.81344723 0.07014708 5.         5.         0.         5.
  5.         2.46826771 1.5774262  1.82737034 5.         5.
  5.         5.         3.28785227 5.         5.         5.
  5.         0.         5.         5.         5.         5.
@@ -1278,7 +1278,7 @@ Soma total das alphas classe 1: 129.42994366299035
   Confusion matrix:
  [[83  0]
  [ 8  1]]
-Alphas da classe 1 com kernel RBF: [ 1.7908264   0.02751089  6.12703047 10.          0.          0.
+Alphas da classe 1: [ 1.7908264   0.02751089  6.12703047 10.          0.          0.
  10.          3.88232301  1.37094328  1.59508984  7.03915289  5.57940228
  10.          5.75468325  3.25290391  0.98123842 10.         10.
   4.50517649  0.         10.          4.73831971 10.          0.
@@ -1294,7 +1294,7 @@ Soma total das alphas classe 1: 173.7957440216829
   Confusion matrix:
  [[83  0]
  [ 9  0]]
-Alphas da classe 1 com kernel RBF: [ 1.83000059  0.02709473  3.5897968  20.          0.          0.
+Alphas da classe 1: [ 1.83000059  0.02709473  3.5897968  20.          0.          0.
  16.09209655  4.36044759  0.93027811  2.18550013  1.17397778  5.02589877
  20.          0.          3.25068206  0.         20.         20.
   6.73514116  0.         20.          0.         20.          7.21432242
@@ -1310,7 +1310,7 @@ Soma total das alphas classe 1: 219.41856259207987
   Confusion matrix:
  [[83  0]
  [ 9  0]]
-Alphas da classe 1 com kernel RBF: [1.81679533e+00 3.14863079e-02 3.69227380e+00 5.00000000e+01
+Alphas da classe 1: [1.81679533e+00 3.14863079e-02 3.69227380e+00 5.00000000e+01
  0.00000000e+00 0.00000000e+00 1.30134426e+01 4.44331406e+00
  9.50627899e-01 2.11983915e+00 5.63068097e+00 4.34377776e+00
  5.00000000e+01 6.96780759e-01 3.28525439e+00 1.11022302e-16
@@ -1331,7 +1331,7 @@ Soma total das alphas classe 1: 274.35051138405635
   Confusion matrix:
  [[82  1]
  [ 8  1]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
  1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 34.0
 
@@ -1343,7 +1343,7 @@ Soma total das alphas classe 1: 34.0
   Confusion matrix:
  [[68 15]
  [ 6  3]]
-Alphas da classe 1 com kernel RBF: [1.51543985 1.0798512  2.87850737 5.         0.         5.
+Alphas da classe 1: [1.51543985 1.0798512  2.87850737 5.         0.         5.
  5.         4.05286739 1.48251166 2.63880868 5.         2.14353964
  5.         5.         2.27174114 4.36267387 5.         5.
  5.         0.36837115 5.         2.9452615  5.         3.49017408
@@ -1359,7 +1359,7 @@ Soma total das alphas classe 1: 120.16876204633769
   Confusion matrix:
  [[60 23]
  [ 2  7]]
-Alphas da classe 1 com kernel RBF: [ 1.4779969   1.0367336   2.99202385 10.          0.          0.37113425
+Alphas da classe 1: [ 1.4779969   1.0367336   2.99202385 10.          0.          0.37113425
  10.          4.19455004  1.45486842  2.57807496 10.          0.61181793
  10.          2.21346532  2.23263644  3.59138909  8.63206137 10.
  10.          0.33418386 10.          2.72700169 10.          4.86222218
@@ -1375,7 +1375,7 @@ Soma total das alphas classe 1: 156.45473887607002
   Confusion matrix:
  [[49 34]
  [ 2  7]]
-Alphas da classe 1 com kernel RBF: [ 1.43076291  0.97884422  2.95125242 20.          0.          5.0934105
+Alphas da classe 1: [ 1.43076291  0.97884422  2.95125242 20.          0.          5.0934105
  10.91669827  4.1383189   1.39895389  2.53077458  0.          1.07305016
  20.          1.24314308  2.18443908  3.56015156  7.89913792 17.96161071
  14.53132332  0.28768856 20.          2.62401839  9.31522981  5.17029671
@@ -1391,7 +1391,7 @@ Soma total das alphas classe 1: 196.70840135488248
   Confusion matrix:
  [[83  0]
  [ 9  0]]
-Alphas da classe 1 com kernel RBF: [1.39945077e+00 9.47635044e-01 2.92754284e+00 4.48797178e+01
+Alphas da classe 1: [1.39945077e+00 9.47635044e-01 2.92754284e+00 4.48797178e+01
  0.00000000e+00 9.39507684e+00 0.00000000e+00 4.11084424e+00
  1.37082791e+00 2.50332169e+00 1.11022302e-16 1.21389611e+00
  5.00000000e+01 9.93095807e-01 2.15852008e+00 3.55267059e+00
@@ -1412,7 +1412,7 @@ Soma total das alphas classe 1: 236.405119031264
   Confusion matrix:
  [[83  0]
  [ 8  1]]
-Alphas da classe 1 com kernel RBF: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
  1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
 Soma total das alphas classe 1: 34.0
 
@@ -1424,7 +1424,7 @@ Soma total das alphas classe 1: 34.0
   Confusion matrix:
  [[69 14]
  [ 6  3]]
-Alphas da classe 1 com kernel RBF: [1.45851928 1.34259118 2.56550597 5.         0.         5.
+Alphas da classe 1: [1.45851928 1.34259118 2.56550597 5.         0.         5.
  5.         3.78692215 1.4266286  2.5578923  5.         1.71022349
  5.         5.         2.10894047 4.59571514 5.         5.
  5.         0.88633493 5.         2.24590884 5.         4.07494921
@@ -1440,7 +1440,7 @@ Soma total das alphas classe 1: 118.04796770816196
   Confusion matrix:
  [[60 23]
  [ 3  6]]
-Alphas da classe 1 com kernel RBF: [ 1.40122177  1.28127071  2.54879362 10.          0.          8.24543821
+Alphas da classe 1: [ 1.40122177  1.28127071  2.54879362 10.          0.          8.24543821
   8.35436426  3.73349236  1.37901226  2.50495762  0.          1.46967802
  10.          3.69607887  2.06825558  4.48325446  5.73619008 10.
   9.46809209  0.83249468 10.          2.09530379 10.          4.46024928
@@ -1456,7 +1456,7 @@ Soma total das alphas classe 1: 150.42523869715214
   Confusion matrix:
  [[56 27]
  [ 3  6]]
-Alphas da classe 1 com kernel RBF: [1.37102962e+00 1.24575417e+00 2.52618738e+00 2.00000000e+01
+Alphas da classe 1: [1.37102962e+00 1.24575417e+00 2.52618738e+00 2.00000000e+01
  0.00000000e+00 5.15622135e+00 0.00000000e+00 3.70162740e+00
  1.35388018e+00 2.47113440e+00 1.11022302e-16 1.40636978e+00
  2.00000000e+01 3.86452482e+00 2.04645589e+00 4.46323719e+00
@@ -1466,3 +1466,97 @@ Alphas da classe 1 com kernel RBF: [1.37102962e+00 1.24575417e+00 2.52618738e+00
  1.87693925e+00 1.51899825e+00 0.00000000e+00 6.92100392e+00
  2.00000000e+01 8.40166595e+00]
 Soma total das alphas classe 1: 180.84160770566464
+
+  Class weight (1): 50.0
+  Accuracy : 0.5217391304347826
+  Precision: 0.14285714285714285
+  Recall   : 0.7777777777777778
+  F1-score : 0.24137931034482757
+  Confusion matrix:
+ [[41 42]
+ [ 2  7]]
+Alphas da classe 1: [ 1.31364903  1.19010934  2.4901041  24.68778283  0.          2.99143357
+  0.          3.6439079   1.3070562   2.41406909  0.          1.34089171
+ 44.63920676  3.90515285  1.99026261  4.42486573  5.59092867 10.97619906
+ 11.36564187  0.75212571 22.27894346  2.03049023  0.          3.7615304
+  0.60382954 11.79627122  2.03091347  0.          1.81383688  0.
+  0.          6.86923187 29.3097171   7.52588064]
+Soma total das alphas classe 1: 213.04403185853488
+
+==> Kernel: RBF kernel: 10
+
+  Class weight (1): 1.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]
+Alphas da classe 1: [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+ 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+Soma total das alphas classe 1: 34.0
+
+  Class weight (1): 5.0
+  Accuracy : 0.8804347826086957
+  Precision: 0.3333333333333333
+  Recall   : 0.2222222222222222
+  F1-score : 0.26666666666666666
+  Confusion matrix:
+ [[79  4]
+ [ 7  2]]
+Alphas da classe 1: [1.54835066 1.54823305 1.64860161 5.         2.18667091 1.96121159
+ 1.13175029 1.57286331 1.54941395 1.85778283 2.67000318 1.93580811
+ 5.         3.41885385 1.54903102 2.76693191 2.60269387 5.
+ 4.40091326 1.54821822 5.         1.54877566 3.49714136 2.38158997
+ 1.54822735 1.21113673 1.55880413 4.07010903 1.77679825 2.89397701
+ 5.         1.70692413 5.         3.11170726]
+Soma total das alphas classe 1: 91.20252249988418
+
+  Class weight (1): 10.0
+  Accuracy : 0.8043478260869565
+  Precision: 0.2
+  Recall   : 0.3333333333333333
+  F1-score : 0.25
+  Confusion matrix:
+ [[71 12]
+ [ 6  3]]
+Alphas da classe 1: [ 1.53321695  1.53342815  1.63559597  8.22631102  2.17159531  1.24415651
+  0.87924976  1.55873806  1.53414451  1.84249584  3.16061533  1.9207228
+ 10.          3.40290704  1.53394731  2.75341723  2.59187782  7.17675442
+  4.44431246  1.53300849  5.75213286  1.53356456  2.18027297  2.36331836
+  1.53299218  0.          1.54414992  4.08979694  1.76467503  2.93313434
+  6.75709179  1.69512044  7.68588284  3.0990674 ]
+Soma total das alphas classe 1: 103.60769459942547
+
+  Class weight (1): 20.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]
+Alphas da classe 1: [ 1.53163665  1.53154302  1.63450029  8.2260596   2.1701214   1.26523778
+  0.87861731  1.55732686  1.53257211  1.84107161  3.13865106  1.91917391
+ 20.          3.40186874  1.53235804  2.75205914  2.59070463  7.17649713
+  4.44334684  1.53161282  5.75119985  1.53204053  2.18003102  2.36163335
+  1.53144029  0.          1.54270522  4.08971966  1.76353943  2.93221548
+  6.75465524  1.69399049  7.68567094  3.09778359]
+Soma total das alphas classe 1: 113.57158400659745
+
+  Class weight (1): 50.0
+  Accuracy : 0.8913043478260869
+  Precision: 0.3333333333333333
+  Recall   : 0.1111111111111111
+  F1-score : 0.16666666666666666
+  Confusion matrix:
+ [[81  2]
+ [ 8  1]]
+Alphas da classe 1: [ 1.5315939   1.53134686  1.63414599  8.22634394  2.16972685  1.25952246
+  0.87862332  1.55723291  1.53240703  1.84072659  3.14463575  1.91888919
+ 20.16191701  3.40169695  1.53210401  2.75181344  2.59073797  7.17649781
+  4.44306693  1.53144258  5.75088809  1.53175607  2.17953737  2.36139094
+  1.53133419  0.          1.54242812  4.08951471  1.76292754  2.93200105
+  6.75477451  1.69394347  7.68541562  3.09748101]
+Soma total das alphas classe 1: 113.72786418223271

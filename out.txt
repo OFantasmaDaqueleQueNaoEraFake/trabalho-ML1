@@ -1,0 +1,188 @@
+
+==> Kernel: Linear kernel
+
+  Class weight (1): 1.0
+  Accuracy : 0.8586956521739131
+  Precision: 0.35714285714285715
+  Recall   : 0.5555555555555556
+  F1-score : 0.43478260869565216
+  Confusion matrix:
+ [[74  9]
+ [ 4  5]]
+
+  Class weight (1): 5.0
+  Accuracy : 0.7717391304347826
+  Precision: 0.07142857142857142
+  Recall   : 0.1111111111111111
+  F1-score : 0.08695652173913043
+  Confusion matrix:
+ [[70 13]
+ [ 8  1]]
+
+  Class weight (1): 10.0
+  Accuracy : 0.75
+  Precision: 0.25
+  Recall   : 0.7777777777777778
+  F1-score : 0.3783783783783784
+  Confusion matrix:
+ [[62 21]
+ [ 2  7]]
+
+  Class weight (1): 20.0
+  Accuracy : 0.782608695652174
+  Precision: 0.17647058823529413
+  Recall   : 0.3333333333333333
+  F1-score : 0.23076923076923078
+  Confusion matrix:
+ [[69 14]
+ [ 6  3]]
+
+  Class weight (1): 50.0
+  Accuracy : 0.7282608695652174
+  Precision: 0.23333333333333334
+  Recall   : 0.7777777777777778
+  F1-score : 0.35897435897435903
+  Confusion matrix:
+ [[60 23]
+ [ 2  7]]
+
+==> Kernel: RBF kernel: 0.1
+
+  Class weight (1): 1.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]
+
+  Class weight (1): 5.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]
+
+  Class weight (1): 10.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]
+
+  Class weight (1): 20.0
+  Accuracy : 0.8913043478260869
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[82  1]
+ [ 9  0]]
+
+  Class weight (1): 50.0
+  Accuracy : 0.8913043478260869
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[82  1]
+ [ 9  0]]
+
+==> Kernel: RBF kernel: 0.5
+
+  Class weight (1): 1.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]
+
+  Class weight (1): 5.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]
+
+  Class weight (1): 10.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]
+
+  Class weight (1): 20.0
+  Accuracy : 0.8913043478260869
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[82  1]
+ [ 9  0]]
+
+  Class weight (1): 50.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]
+
+==> Kernel: RBF kernel: 1
+
+  Class weight (1): 1.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]
+
+  Class weight (1): 5.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]
+
+  Class weight (1): 10.0
+  Accuracy : 0.8913043478260869
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[82  1]
+ [ 9  0]]
+
+  Class weight (1): 20.0
+  Accuracy : 0.8913043478260869
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[82  1]
+ [ 9  0]]
+
+  Class weight (1): 50.0
+  Accuracy : 0.9021739130434783
+  Precision: 0.0
+  Recall   : 0.0
+  F1-score : 0.0
+  Confusion matrix:
+ [[83  0]
+ [ 9  0]]

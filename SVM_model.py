@@ -79,9 +79,9 @@ class SVM(BaseEstimator):
 
                 # Atualiza o bias b
                 b1 = self.b - e_i - self.y[i] * (self.alpha[i] - alpha_io) * self.K[i, i] \
-                     - self.y[j] * (self.alpha[j] - alpha_jo) * self.K[i, j]
+                    - self.y[j] * (self.alpha[j] - alpha_jo) * self.K[i, j]
                 b2 = self.b - e_j - self.y[j] * (self.alpha[j] - alpha_jo) * self.K[j, j] \
-                     - self.y[i] * (self.alpha[i] - alpha_io) * self.K[i, j]
+                    - self.y[i] * (self.alpha[i] - alpha_io) * self.K[i, j]
 
                 if 0 < self.alpha[i] < Ci:
                     self.b = b1
@@ -113,7 +113,8 @@ class SVM(BaseEstimator):
         return min(max(alpha, L), H)
 
     def _error(self, i):
-        return self._predict_row(self.X[i]) - self.y[i]
+        return self._predict_row(self.X[i]) - self.y[i]#og
+       #return min((self._predict_row(self.X[i]) - self.y[i]), 1)#moddified version
 
     def random_index(self, z):
         i = z

@@ -1,0 +1,114 @@
+
+Evaluating folder: dataset_group_2_class_imbalance
+Processed dataset_1000_hypothyroid.csv
+Processed dataset_1002_ipums_la_98-small.csv
+Processed dataset_1004_synthetic_control.csv
+Processed dataset_1013_analcatdata_challenger.csv
+Processed dataset_1014_analcatdata_dmft.csv
+Processed dataset_1016_vowel.csv
+Processed dataset_1018_ipums_la_99-small.csv
+Processed dataset_1020_mfeat-karhunen.csv
+Processed dataset_1021_page-blocks.csv
+Processed dataset_1022_mfeat-pixel.csv
+Processed dataset_1023_soybean.csv
+Processed dataset_1039_hiva_agnostic.csv
+Processed dataset_1045_kc1-top5.csv
+Processed dataset_1049_pc4.csv
+Processed dataset_1050_pc3.csv
+Processed dataset_1056_mc1.csv
+Processed dataset_1059_ar1.csv
+Processed dataset_1061_ar4.csv
+Processed dataset_1064_ar6.csv
+Processed dataset_1065_kc3.csv
+Processed dataset_311_oil_spill.csv
+Processed dataset_312_scene.csv
+Processed dataset_316_yeast_ml8.csv
+Processed dataset_38_sick.csv
+Processed dataset_450_analcatdata_lawsuit.csv
+Processed dataset_463_backache.csv
+Processed dataset_757_meta.csv
+Processed dataset_764_analcatdata_apnea3.csv
+Processed dataset_765_analcatdata_apnea2.csv
+Processed dataset_767_analcatdata_apnea1.csv
+Processed dataset_865_analcatdata_neavote.csv
+Processed dataset_867_visualizing_livestock.csv
+Processed dataset_875_analcatdata_chlamydia.csv
+Processed dataset_940_water-treatment.csv
+Processed dataset_947_arsenic-male-bladder.csv
+Processed dataset_949_arsenic-female-bladder.csv
+Processed dataset_950_arsenic-female-lung.csv
+Processed dataset_951_arsenic-male-lung.csv
+Processed dataset_954_spectrometer.csv
+Processed dataset_958_segment.csv
+Processed dataset_962_mfeat-morphological.csv
+Processed dataset_966_analcatdata_halloffame.csv
+Processed dataset_968_analcatdata_birthday.csv
+Processed dataset_971_mfeat-fourier.csv
+Processed dataset_976_JapaneseVowels.csv
+Processed dataset_978_mfeat-factors.csv
+Processed dataset_980_optdigits.csv
+Processed dataset_984_analcatdata_draft.csv
+Processed dataset_987_collins.csv
+Processed dataset_995_mfeat-zernike.csv
+Average Metrics for dataset_group_2_class_imbalance:
+  accuracy: 0.7873
+  precision: 0.4562
+  recall: 0.5122
+  f1_score: 0.4282
+
+Evaluating folder: noise_outliers
+Processed dataset_13_breast-cancer.csv
+Processed dataset_164_molecular-biology_promoters.csv
+Processed dataset_24_mushroom.csv
+Processed dataset_25_colic.csv
+Processed dataset_27_colic.csv
+Processed dataset_29_credit-approval.csv
+Processed dataset_312_scene.csv
+Processed dataset_316_yeast_ml8.csv
+Processed dataset_31_credit-g.csv
+Processed dataset_333_monks-problems-1.csv
+Processed dataset_334_monks-problems-2.csv
+Processed dataset_335_monks-problems-3.csv
+Processed dataset_336_SPECT.csv
+Processed dataset_38_sick.csv
+Processed dataset_3_kr-vs-kp.csv
+Processed dataset_43_haberman.csv
+Processed dataset_444_analcatdata_boxing2.csv
+Processed dataset_448_analcatdata_boxing1.csv
+Processed dataset_450_analcatdata_lawsuit.csv
+Processed dataset_451_irish.csv
+Processed dataset_461_analcatdata_creditscore.csv
+Processed dataset_463_backache.csv
+Processed dataset_466_schizo.csv
+Processed dataset_470_profb.csv
+Processed dataset_481_biomed.csv
+Processed dataset_49_heart-c.csv
+Processed dataset_50_tic-tac-toe.csv
+Processed dataset_51_heart-h.csv
+Processed dataset_55_hepatitis.csv
+Processed dataset_56_vote.csv
+Processed dataset_714_fruitfly.csv
+Processed dataset_719_veteran.csv
+Processed dataset_720_abalone.csv
+Processed dataset_724_analcatdata_vineyard.csv
+Processed dataset_738_pharynx.csv
+Processed dataset_741_rmftsa_sleepdata.csv
+Processed dataset_745_auto_price.csv
+Processed dataset_747_servo.csv
+Processed dataset_748_analcatdata_wildcat.csv
+Processed dataset_757_meta.csv
+Processed dataset_764_analcatdata_apnea3.csv
+Processed dataset_765_analcatdata_apnea2.csv
+Processed dataset_767_analcatdata_apnea1.csv
+Processed dataset_771_analcatdata_michiganacc.csv
+Processed dataset_784_newton_hema.csv
+Processed dataset_786_cleveland.csv
+Processed dataset_796_cpu.csv
+Processed dataset_798_cholesterol.csv
+Processed dataset_802_pbcseq.csv
+Processed dataset_810_pbc.csv
+Average Metrics for noise_outliers:
+  accuracy: 0.6594
+  precision: 0.5102
+  recall: 0.5875
+  f1_score: 0.4967

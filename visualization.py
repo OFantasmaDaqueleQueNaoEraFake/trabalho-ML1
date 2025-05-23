@@ -119,6 +119,9 @@ def normalize_manual(X):
 
 
 def classification_from_dataframe(df, flag):
+    from sklearn.metrics import confusion_matrix    
+    from graph import grafic, heatmappers
+
     y = df.iloc[:, -1].copy()
     X = df.iloc[:, :-1].copy()
     X = pd.get_dummies(X, dummy_na=True)
@@ -155,7 +158,11 @@ def classification_from_dataframe(df, flag):
     model.fit(X_train, y_train)
     predictions = model.predict(X_test)
     metrics = compute_metrics(y_test, predictions, pos_label=1)
+    confusion_matrix = confusion_matrix(y_true=y_test, y_pred=predictions)
     plot_decision_boundary(model, X_test, y_test, title="Decision Boundary")
+    print(confusion_matrix)
+    grafic(metrics, "amogus")
+    heatmappers(confusion_matrix)
 
     return metrics
 
@@ -179,7 +186,7 @@ def evaluate_folder(folder_path, flag):
     return avg_metrics
 
 if __name__ == "__main__":
-    folders = ["noise_outliers"]
+    folders = ["tests"]
 
     for folder in folders:
         print(f"\nEvaluating folder with standard SVM: {folder}")

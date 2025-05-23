@@ -106,6 +106,11 @@ def compute_metrics(y_true, y_pred, pos_label=1):
         "precision": precision,
         "recall": recall,
         "f1_score": f1,
+
+        "TP": TP,
+        "TN": TN,
+        "FP": FP,
+        "FN": FN,
     }
 
 def normalize_manual(X):
@@ -179,7 +184,7 @@ def evaluate_folder(folder_path, flag):
     return avg_metrics
 
 if __name__ == "__main__":
-    folders = ["noise_outliers"]
+    folders = ["tests"]
 
     for folder in folders:
         print(f"\nEvaluating folder with standard SVM: {folder}")

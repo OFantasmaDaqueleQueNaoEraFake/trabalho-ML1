@@ -1,5 +1,0 @@
-
-Evaluating folder with standard SVM: noise_outliers
-Failed on dataset_13_breast-cancer.csv: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
-Failed on dataset_164_molecular-biology_promoters.csv: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
-Failed on dataset_24_mushroom.csv: numpy boolean subtract, the `-` operator, is not supported, use the bitwise_xor, the `^` operator, or the logical_xor function instead.
